@@ -2,4 +2,9 @@ module ShkadovXCB [system] {
   header "/usr/include/xcb/xcb.h"
   link "xcb"
   export *
+
+  explicit module RandR {
+  	header "/usr/include/xcb/randr.h"
+  	link "xcb-randr"
+  }
 }
